@@ -3,80 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert McKellar's Photography Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        section {
-            padding: 20px;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .gallery-item {
-            margin: 10px;
-        }
-        .gallery-item img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>Photography Prints Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Robert McKellar Photography</h1>
+        <h1>Stunning Photography Prints</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Gallery</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-    <section>
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="Assignment8/images/fall-1.jpg" alt="Capitol Reef Waterfall">
+    
+    <main>
+        <section id="gallery">
+            <h2>Our Collection</h2>
+            <div class="photo-grid">
+                <article>
+                    <img src="path-to-your-image.jpg" alt="Description of Image">
+                    <h3>Print Title</h3>
+                    <p>$Price</p>
+                    <button>Add to Cart</button>
+                </article>
+                <!-- Repeat the above article block for each photo you want to list -->
             </div>
-            <div class="gallery-item">
-                <img src="iAssignment8/images/glacier-2.jpg" alt="Glacier National Park">
-            </div>
-            <div class="gallery-item">
-                <img src="Assignment8/images/bad.jpg" alt="Badlands National Park">
-            </div>
-            </div> class="gallery-item">
-                <img src="Assignment8/images/fwe-1.jpg" alt="Bob Marshall Wilderness">
-            <!-- Add more gallery items as needed -->
-        </div>
-    </section>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Photography Website. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:email@example.com">email@example.com</a></p>
     </footer>
 </body>
 </html>
